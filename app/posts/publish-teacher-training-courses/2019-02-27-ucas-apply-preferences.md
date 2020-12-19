@@ -4,11 +4,7 @@ description: Settings such as GT12 letters, Star J, Star X and other requirement
 date: 2019-02-27
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({
-  html: "28 February – Update from UCAS: Only UTT application alerts and GT12 preferences need to be set. [Updated design](/publish-teacher-training-courses/ucas-apply-preferences-2)" | markdown("inline"),
-  iconFallbackText: "Warning"
-}) }}
+{% warningText "28 February – Update from UCAS: Only UTT application alerts and GT12 preferences need to be set. [Updated design](/publish-teacher-training-courses/ucas-apply-preferences-2)" %}
 
 Providers can set preferences in NetUpdate for the way UCAS Apply behaves. NetUpdate is going away, we need to inherit and explain these preferences.
 

@@ -4,11 +4,7 @@ description: Only the GT12 letter and email alert preferences are needed.
 date: 2019-03-01
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({
-  html: "[This design has been updated to include contacts](/publish-teacher-training-courses/ucas-contacts)" | markdown("inline"),
-  iconFallbackText: "Warning"
-}) }}
+{% warningText "[This design has been updated to include contacts](/publish-teacher-training-courses/ucas-contacts)" %}
 
 Following the [initial design](/publish-teacher-training-courses/ucas-apply-preferences), UCAS confirmed that only the GT12 letter and the application email alert preferences were still used.
 

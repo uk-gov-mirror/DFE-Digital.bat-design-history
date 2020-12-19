@@ -33,6 +33,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('totalFromRows', require('./lib/filters/total-from-rows'))
   eleventyConfig.addFilter('widont', require('./lib/filters/widont'))
 
+  // Shortcodes
+  eleventyConfig.addShortcode('warningText', require('./lib/shortcodes/warning-text'))
+
   // Passthrough
   eleventyConfig.addPassthroughCopy('./app/documents')
   eleventyConfig.addPassthroughCopy('./app/images')

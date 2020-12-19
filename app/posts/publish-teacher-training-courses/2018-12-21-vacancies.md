@@ -4,11 +4,7 @@ description: First design for changing vacancies at each training location on a 
 date: 2018-12-21
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({
-  html: "There’s <a href=\"/publish-teacher-training-courses/vacancies-iteration-14-jan\">an updated design</a>.",
-  iconFallbackText: "Warning"
-}) }}
+{% warningText "There’s [an updated design](/publish-teacher-training-courses/vacancies-iteration-14-jan)." %}
 
 We don’t know how providers use vacancies yet. This design assumes that closing a course (eg there are no vacancies at any training location) is the most common action.
 

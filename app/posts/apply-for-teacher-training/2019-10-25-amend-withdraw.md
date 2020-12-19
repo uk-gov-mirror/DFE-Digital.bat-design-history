@@ -4,11 +4,7 @@ description: Amending applications and withdrawing course choices.
 date: 2019-10-25
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({
-  html: "[We didn’t build the amending application design](/apply-for-teacher-training/amending-mvp)" | markdown("inline"),
-  iconFallbackText: "Warning"
-}) }}
+{% warningText "[We didn’t build the amending application design](/apply-for-teacher-training/amending-mvp)" %}
 
 First spike to support two features of the application process:
 

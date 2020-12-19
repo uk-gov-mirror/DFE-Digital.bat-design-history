@@ -4,8 +4,7 @@ description: Replacing the Google form with an integrated form.
 date: 2019-12-05
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({ html: 'We built a <a href="/apply-for-teacher-training/give-a-reference-iteration">simpler version of this design</a>.', iconFallbackText: "Warning" }) }}
+{% warningText "We built a [simpler version of this design](/apply-for-teacher-training/give-a-reference-iteration)" %}
 
 One of the first aspects of [the MVP service](/apply-for-teacher-training/apply-launch) we wanted to improve was how we accept references.
 

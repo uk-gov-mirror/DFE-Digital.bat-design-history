@@ -4,8 +4,7 @@ description: Make the copy feature easier to find.
 date: 2018-09-14
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({ text: "We didn’t build this design. Instead we used an MVP ‘you can find copy here’ – ie a signpost where people were looking for the feature.", iconFallbackText: "Warning" }) }}
+{% warningText "We didn’t build this design. Instead we used an MVP ‘you can find copy here’ – ie a signpost where people were looking for the feature." %}
 
 An iteration on where the copy content feature sits.
 

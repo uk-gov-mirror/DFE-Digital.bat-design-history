@@ -4,11 +4,7 @@ description: Training with a disability and reasonable adjustments course choice
 date: 2019-12-06
 ---
 
-{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-{{ govukWarningText({
-  html: "[See previous iteration here](/apply-for-teacher-training/training-with-a-disability-iteration)" | markdown("inline"),
-  iconFallbackText: "Warning"
-}) }}
+{% warningText "[See previous iteration here](/apply-for-teacher-training/training-with-a-disability-iteration)" %}
 
 Disclosing a disability is a way for candidates to present their disability and needs to a provider, with the potential benefit of making training easier and more accessible.
 
