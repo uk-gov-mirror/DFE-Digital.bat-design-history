@@ -34,6 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('widont', require('./lib/filters/widont'))
 
   // Shortcodes
+  eleventyConfig.addPairedShortcode('insetText', require('./lib/shortcodes/inset-text'))
   eleventyConfig.addShortcode('warningText', require('./lib/shortcodes/warning-text'))
 
   // Passthrough

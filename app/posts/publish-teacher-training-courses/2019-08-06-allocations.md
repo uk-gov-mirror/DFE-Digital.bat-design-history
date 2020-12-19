@@ -4,17 +4,9 @@ description: Indicate the current policy on course detail pages.
 date: 2019-08-06
 ---
 
-{% set html %}
-  <h4 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="https://docs.google.com/document/d/1926pN2UTaknKAC4bYUGyCSiPe5lBXJZ33ld7LXmftYw/edit">Original context</a></h4>
-  <p class="govuk-body-s">Document. Please ask for access permissions</p>
-  <p>The ask is for us to look at how we can bring in the request allocations process into Find in the simplest and quickest way possible. </p>
-  <p><a href="https://trello.com/c/CNOPjJNc/1861-allocations-in-find-design-research">Trello ticket</a></p>
-{% endset %}
+[Original context](https://docs.google.com/document/d/1926pN2UTaknKAC4bYUGyCSiPe5lBXJZ33ld7LXmftYw/edit) (please ask for access permissions):
 
-{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
-{{ govukInsetText({
-  html: html
-}) }}
+> The ask is for us to look at how we can bring in the request allocations process into Find in the simplest and quickest way possible.
 
 Show the allocation policy for a course on the basic details tab.
 

@@ -25,33 +25,25 @@ Users who belong to the old organisation will no longer be able to see it unless
 
 ### Examples
 
-{% set example1 %}
-  Given I belong to provider A and provider B
-  And an application was made to provider A
-  When I change the offer to a course at provider B
-  Then I can still see the application
-  And users who only belong to provider A can no longer see the application in their list
-  And users who belong to provider B can see the application in their list
-{% endset %}
+{% insetText %}
+Given I belong to provider A and provider B
+And an application was made to provider A
+When I change the offer to a course at provider B
+Then I can still see the application
+And users who only belong to provider A can no longer see the application in their list
+And users who belong to provider B can see the application in their list
+{% endinsetText %}
 
+{% insetText %}
+Given I belong to organisation A
+And the application was made to a course at organisation A
+And the application was made to a course accredited by organisation B
+And I change the offer to a course accredited by organisation C
+Then I can still see the application
+And users who belong to organisation B can no longer see the application in their list
+And users who belong to organisation C can now see the application in their list
+{% endinsetText %}
 
-{{ govukInsetText({
-  html: example1 | markdown
-}) }}
-
-{% set example2 %}
-  Given I belong to organisation A
-  And the application was made to a course at organisation A
-  And the application was made to a course accredited by organisation B
-  And I change the offer to a course accredited by organisation C
-  Then I can still see the application
-  And users who belong to organisation B can no longer see the application in their list
-  And users who belong to organisation C can now see the application in their list
-{% endset %}
-
-{{ govukInsetText({
-  html: example2 | markdown
-}) }}
 
 ## How the application list differs when an offer has been made
 
